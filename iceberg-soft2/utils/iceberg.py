@@ -13,6 +13,7 @@ import string
 import phonenumbers
 from langcodes import Language
 
+referral_link = config.REF_LINK
 
 def lang_code_by_phone(phone_number: str):
     try:
@@ -161,7 +162,8 @@ class IcebergBot:
                 bot=await self.client.resolve_peer('IcebergAppBot'),
                 platform='android',
                 from_bot_menu=False,
-                url='https://0xiceberg.com/webapp/'
+                url='https://0xiceberg.com/webapp/',
+                start_param=referral_link
             ))
             await self.client.disconnect()
             auth_url = web_view.url
