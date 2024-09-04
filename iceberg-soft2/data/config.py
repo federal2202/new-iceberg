@@ -2,6 +2,8 @@
 API_ID = ''
 API_HASH = ''
 
+REF_LINK = ''
+
 DELAYS = {
     'ACCOUNT': [5, 15],  # delay between connections to accounts (the more accounts, the longer the delay)
     'BEFORE_CLAIM': [5, 15],   # delay before claim points
